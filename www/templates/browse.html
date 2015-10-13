@@ -1,0 +1,32 @@
+
+
+<ion-content>
+  <div class="list list-inset" ng-controller="addController">
+    <label class="item item-input item-stacked-label myBorder" style="
+    margin-top: 37px;
+">
+    <span class="input-label">Recipe name</span>
+    <input type="text" ng-model="recName">
+  </label>
+  <label class="item item-input item-stacked-label myBorder">
+    <span class="input-label">Ingredients</span>
+    <textarea rows="10" cols="10" ng-model="recIngredients"></textarea>
+  </label>
+  </label>
+  <label class="item item-input item-stacked-label myBorder">
+    <span class="input-label">Preparation directions</span>
+    <textarea rows="10" cols="10" ng-model="recDirections"></textarea>
+  </label>
+  <ul class="list">
+    <li class="item item-checkbox">
+       <label class="checkbox">
+         <input ng-model='recGroups'type="checkbox">
+       </label>
+       Grupo
+    </li>
+  </ul>
+  <div class="item button button-block button-positive" ng-model="addButton" ng-disabled="!recName||!recIngredients||!recDirections" ng-click="submitRecipe()" >
+  Add Recipe
+  </div>
+</ion-content>
+</ion-view>
