@@ -1,8 +1,9 @@
 <ion-content style="margin-top:43px;">
   <ion-list ng-controller="groupController">
-    <ion-item ng-repeat="group in groups">
+    <ion-item ng-repeat="group in groups" class="item-text-wrap">
       <h2>{{group.name}}</h2> 
-      <h2>{{group.members}}</h2> 
+      <h2>{{group.members}}</h2>
+      <h2>{{group.recipes}}</h2>
     </ion-item>
   </ion-list>
 </ion-content>
