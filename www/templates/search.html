@@ -3,7 +3,7 @@
     <ion-item ng-repeat="group in groups" class="item-text-wrap">
       <h2 style="margin-bottom:10px;">{{group.name}}</h2>
       <ion-item ng-repeat="recipe in group.recipes">
-      	<a ui-sref="app.playlist({id:recipeecipe.$id})" nav-direction="enter" ><h2>{{recipe.recipeName}}</h2> </a>
+      	<a ui-sref="app.playlist({id:recipe.$id})" nav-direction="enter" ><h2>{{recipe.recipeName}}</h2> </a>
       </ion-item>
     </ion-item>
   </ion-list>
