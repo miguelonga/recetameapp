@@ -60,7 +60,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
 
   .state('app.playlist', {
-    url: "playlists/:id",
+    url: "playlist/:id",
     views: {
       'menuContent': {
         templateUrl: 'templates/playlist.html',

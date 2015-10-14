@@ -1,5 +1,5 @@
 app.factory('recipeService',function($firebaseArray) {
-    var fb = new Firebase("https://vivid-fire-4961.firebaseio.com");
+    var fb = new Firebase("https://vivid-fire-4961.firebaseio.com/recipes");
     var recs = $firebaseArray(fb);
     var recipeService = {
         all: recs,

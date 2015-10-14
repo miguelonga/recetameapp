@@ -1,9 +1,10 @@
 <ion-content style="margin-top:43px;">
   <ion-list ng-controller="groupController">
     <ion-item ng-repeat="group in groups" class="item-text-wrap">
-      <h2>{{group.name}}</h2> 
-      <h2>{{group.members}}</h2>
-      <h2>{{group.recipes}}</h2>
+      <h2 style="margin-bottom:10px;">{{group.name}}</h2>
+      <ion-item ng-repeat="recipe in group.recipes">
+      	<a ui-sref="app.playlist({id:recipeecipe.$id})" nav-direction="enter" ><h2>{{recipe.recipeName}}</h2> </a>
+      </ion-item>
     </ion-item>
   </ion-list>
 </ion-content>
